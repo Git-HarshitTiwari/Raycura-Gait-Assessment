@@ -50,6 +50,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\Start_Project.ps1
 
 The launcher installs the frontend dependencies and builds the interface when `frontend/dist/` is missing. Open [the local dashboard](http://127.0.0.1:8765), choose a patient and motion, and use **Left**, **Right**, or **Both** to select the view. Press **Ctrl+C** in the launcher terminal to stop the app.
 
+### Troubleshoot startup
+
+- **Port 8765 is already in use (`Errno 10048`).** Open [the local dashboard](http://127.0.0.1:8765). If Raycura is already running, you can use that instance. To restart it, press **Ctrl+C** in the terminal that started the running server, then run the launcher again.
+- **The dashboard opens but assessments fail to load.** Check that `prepared_data` points to the approved dataset and that the folder named by `output` in [config.json](config.json) contains the saved results. Run `run_gait_analysis.py` from the project Python environment to regenerate the results from the approved data.
+- **The page shows an older interface after a frontend edit.** Rebuild from the project root with `npm.cmd --prefix frontend run build`, then reload the dashboard.
+
 ### Optional evidence assistant
 
 Start an Ollama server at `127.0.0.1:11434` with `gemma3:4b` and `embeddinggemma:300m`. With a portable installation under `tools/ollama/`, you can start it in a second terminal:
