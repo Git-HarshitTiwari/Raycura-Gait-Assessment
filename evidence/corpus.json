@@ -1,0 +1,52 @@
+[
+  {
+    "id": "IOSA2014",
+    "title": "Assessment of waveform similarity in clinical gait data: the linear fit method",
+    "authors": "Iosa et al.", "year": 2014,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25126548/",
+    "doi": "10.1155/2014/214156", "section": "Abstract; Discussion, linear-fit limitations",
+    "checked": "2026-11-11", "type": "authored_paraphrase_of_primary_research",
+    "text": "A linear fit between a recorded waveform and a reference separates scale, intercept and residual differences. A mean offset or RMS difference alone cannot distinguish these effects. The range of the average curve is not the average of individual ranges. Low fit quality and temporal shifts limit interpretation of slope and intercept. The study does not validate Raycura thresholds or diagnose the cause of an individual's deviation.",
+    "tags": ["offset", "excursion", "shape", "reference", "rom", "linear fit"]
+  },
+  {
+    "id": "ATTias2019",
+    "title": "Kinematics can help to discriminate the implication of iliopsoas, hamstring and gastrocnemius contractures to a knee flexion gait pattern",
+    "authors": "Attias et al.", "year": 2019,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30594869/",
+    "doi": "10.1016/j.gaitpost.2018.12.029", "section": "Abstract: Methods and Results",
+    "checked": "2026-11-11", "type": "authored_paraphrase_of_primary_research",
+    "text": "An exoskeleton imposed three levels of bilateral isolated muscle restriction in ten healthy adults. Sustained flexed knee positioning occurred with each tested restriction. Iliopsoas restriction accompanied increased hip flexion and anterior pelvic tilt; hamstring restriction accompanied posterior pelvic tilt and support-phase ankle dorsiflexion. These experimentally imposed patterns justify conditional examination hypotheses, not reverse diagnosis of contracture from an unknown patient's angles. Anatomical directions and relevant phase evidence are necessary.",
+    "tags": ["multi-joint", "iliopsoas", "hamstrings", "muscle function", "anterior pelvic tilt", "posterior pelvic tilt", "support phase"]
+  },
+  {
+    "id": "ISB2024",
+    "title": "ISB recommendations on the definition, estimation, and reporting of joint kinematics using wearable inertial measurement technology",
+    "authors": "Cereatti et al.", "year": 2024,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39032224/",
+    "doi": "10.1016/j.jbiomech.2024.112225", "section": "Abstract: five reporting categories",
+    "checked": "2026-11-11", "type": "authored_paraphrase_of_primary_guidance",
+    "text": "IMU joint-kinematic studies should describe sensor calibration, capture protocol, the kinematic model and subject calibration, analysis methods and quality assessment. These details support reproducibility and comparison. A similar channel name does not establish compatible angle conventions. Reference comparisons and repeat differences remain conditional on acquisition compatibility.",
+    "tags": ["quality", "calibration", "angle convention", "imu", "repeat", "reference compatibility"]
+  },
+  {
+    "id": "BAKER2009",
+    "title": "The gait profile score and movement analysis profile",
+    "authors": "Baker et al.", "year": 2009,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19632117/",
+    "doi": "10.1016/j.gaitpost.2009.05.020", "section": "Abstract: rationale and validation population",
+    "checked": "2026-11-11", "type": "authored_paraphrase_of_primary_research",
+    "text": "The study supports reporting kinematic differences from a reference and displaying their contributions across movements. Its validation involved a pediatric gait service. Raycura's per-channel RMS differences use elementary distance calculations; they are not a validated implementation of the Gait Profile Score, a diagnostic probability, or proof of impaired walking.",
+    "tags": ["rms", "deviation", "multi-joint", "reference", "interpretation"]
+  },
+  {
+    "id": "MYOGAIT_RULES",
+    "title": "myogait recorded-angle rule definitions",
+    "authors": "myogait contributors", "year": 2026,
+    "url": "https://github.com/IDMDataHub/myogait/blob/524ee4629e26b4aa104a2f036e077b835fd263e7/myogait/analysis.py",
+    "section": "detect_pathologies and detect_equinus at the pinned source revision",
+    "checked": "2026-11-20", "type": "software_rule_provenance",
+    "text": "Four conditions use a late knee maximum, a late hip maximum together with whole-cycle ankle span, a whole-cycle knee minimum, or an early ankle maximum. Raycura applies the selected predicates to one limb on its exported cycle. This source documents the thresholds. It supplies no clinical validation for these recordings.",
+    "tags": ["rule", "late knee", "hip and ankle", "whole-cycle", "early ankle", "threshold"]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "dataset_protocol": "prepared_latest208",
+  "prepared_data": "CSV's Folder",
+  "analysis_mode": "numerical_and_myogait_rules",
+  "protocol_file": "movement_rule_protocol.md",
+  "original_data": "D:/raycura project final",
+  "additional_data": "D:/lata_mangeshkar_data",
+  "output": "results_pattern_prototype/stage4",
+  "seed": 1147,
+  "technical_quality": {"max_absolute_angle_deg": 180, "max_excursion_deg": 180, "max_adjacent_step_deg": 45, "flat_tolerance_deg": 0.000001},
+  "descriptive_rules": {"minimum_offset_deg": 5, "minimum_excursion_difference_deg": 5, "reduced_excursion_ratio": 0.8, "offset_energy_fraction": 0.8},
+  "ml": {"ridge_alpha": 0.4, "minimum_training_participants": 12, "review_quantile": 0.9, "minimum_relative_rmse_gain": 0.05, "minimum_people_improved_fraction": 0.6, "maximum_reference_review_fraction": 0.2, "minimum_simulated_target_recall": 0.5, "minimum_simulated_localization": 0.5, "minimum_simulated_gain": 0.05, "bootstrap_repeats": 1000},
+  "ollama": {"url": "http://127.0.0.1:11434", "generator": "gemma3:4b", "embedding": "embeddinggemma:300m", "context": 4096, "timeout_seconds": 180},
+  "interpretation": {"verified_direction_conventions": {}, "verified_phase_protocol": false, "verified_stance_by_record": {}, "convention_evidence": "Unavailable in supplied CSVs; do not infer anatomical sign conventions from curve shape."}
+}
